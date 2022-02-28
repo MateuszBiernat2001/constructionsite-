@@ -53,7 +53,6 @@ body{
   font-size: 20px;
   z-index: 100;
 }
-
 .navbar-links li a {
   text-decoration: none;
   color: white;
@@ -62,7 +61,6 @@ body{
   display: block;
   transition: .5s all;
 }
-
 .navbar-links li a:hover{
   background-color: white;
   color: black;
@@ -77,15 +75,12 @@ body{
   height: 21px;
   display: none;
 }
-
 .toggle-button .bar{
   height: 3px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
-
-
 /*Header*/
 header{
   height: 800px;
@@ -95,14 +90,11 @@ header{
   background-size: cover;
   justify-content: center;
 }
-
 /*About Us*/
-
 .about-us{
   padding: 85px;
   background-color: var(--gray)
 }
-
 .about-us-informations{
   margin-top: 15px;
 }
@@ -112,8 +104,6 @@ header{
   letter-spacing: .5px;
   margin-top: 25px;
 }
-
-
 .our-realization{
   display: flex;
   flex-direction: column;
@@ -123,14 +113,18 @@ header{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5px;
+  padding: 10px;
   max-width: 1900px;
   background-color: var(--gray);
 }
 .our-realization_item{
-  height: 600px;
+  height: 550px;
   width: 400px;
   margin: 25px;
+  transition: all .3s;
+}
+.our-realization_item:hover{
+  transform: scale(.9);
 }
 .our-realization_item-img{
   background-color: gray;
@@ -145,7 +139,6 @@ header{
   margin-top: 15px;
   color: var(--white);
 }
-
 /*Reference*/
 .reference{
   padding: 85px;
@@ -164,10 +157,14 @@ header{
   color:var(--white);  
   border-radius:15px;
   letter-spacing: .4px;
+  transition: .3s all;
 }
-
-
-
+.item-reference:hover{
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 15px;
+  color: var(--gray);
+}
 /*Contact*/
 .contact{
   padding: 45px;
@@ -196,14 +193,6 @@ footer{
   padding: 30px;
   background-color: var(--white);
 }
-
-
-
-
-
-
-
-
 @media (max-width: 900px) {
   .wrapper-logo{
     flex-direction: column;
