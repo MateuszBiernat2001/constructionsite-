@@ -39,6 +39,7 @@ body{
   align-items: center;
   color: wheat;
   width: 100%;
+  z-index: 999;
 }
 .navbar-links{
   padding: 20px;
